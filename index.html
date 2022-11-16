@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favIcon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <!-- fontAwesome para iconos -->
+    <script src="https://kit.fontawesome.com/0001ad3a97.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+    <title>Julian Gibelli | Inicio</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- Inicio de HEADER -->
+    <header>
+        <!-- EL NAV DEBE SER UN COMPONENTE -->
+        <nav>Esto es el nav</nav>   
+        <h1 class="title"><span class="material-symbols-outlined">waving_hand</span> Hola!<br>soy <mark>Julian</mark></br></h1>     
+    </header>
+    <!-- Inicio de seccion bienvenida -->
+    <section class="bienvenida">
+        <img class="fotoPerfil" src="./assets/fotoPerfil-removebg.png" alt="foto de perfil">
+        <div class="bienvenida__text-container">
+            <h2 class="bienvenida__text-container__title">FrontEnd Jr</h2>
+            <p>Estudiante de la Tecnicatura en Progamacion Informatica en la Universidad de San Martin, Desarrollador frontEnd Jr, Desarrollador de integraciones en Oracle Integration Cloud en Watea! y Runner en proceso. Continuamente busco aprender y superarme, realizo la carrera de Desarrollador FullStack en <strong>CODERHOUSE</strong> y <strong>APX</strong>, participo de comunidades IT y comparto buenos momentos con amigos.</p>
+        </div>
+    </section>
+    <!-- Inicio de CONTACTO, debe ser un COMPONENTE -->
+    <section class="contacto-insert">
+        <!-- esto se recorta y pega dentro de mi contacto.js -->
+        <div class="form-container">
+            <h1 class="form-container__title"><mark>Hablemos!</mark></h1>
+            <form class="form-container__fields">
+                <div class="form-container__fields-inputs">
+                    <label for="nombre">Tu nombre</label>
+                    <input type="input" id="nombre">
+                </div>
+                <div class="form-container__fields-inputs">
+                    <label for="email">Tu email</label>
+                    <input type="input" id="email">
+                </div>
+                <div class="form-container__fields-inputs">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" placeholder="Escriba su mensaje.."></textarea>                    
+                </div>
+                <div class="form-container__fields-inputs">
+                    <button class="boton">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Inicio de FOOTER, debe ser un COMPONENTE -->
+    <footer class="footer">
+        <div class="footer-icon-container">
+            <a target="_blank" href="https://github.com/JulianGibelli" title="Github" ><i class="fa-brands fa-square-github fa-2xl"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/julian-gibelli-41189a177/" title="Linkedin" ><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
