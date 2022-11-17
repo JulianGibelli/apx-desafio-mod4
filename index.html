@@ -10,22 +10,25 @@
     <script src="https://kit.fontawesome.com/0001ad3a97.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+
+    <!-- COMPONENTES -->
+    <script defer src="./componentes/navbar.js"></script>
+    <link rel="stylesheet" href="./componentes/navbar.css">
+
+    <script defer src="./componentes/footer.js"></script>
+    <link rel="stylesheet" href="./componentes/footer.css">
+
     <title>Julian Gibelli | Inicio</title>
     <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+    
 </head>
 <body>
     <!-- Inicio de HEADER -->
     <header>
-        <!-- EL NAV DEBE SER UN COMPONENTE -->
-        <nav>
-            <ul class="nav-list">
-                <li><i class="fa-sharp fa-solid fa-code fa-lg icono"></i><a href="#">JulianGibelli</a></li>
-                <li><a href="#" class="nav-list__link">Quienes somos</a></li>
-                <li><a href="#" class="nav-list__link">Contactanos</a></li>
-                <li><a href="#" class="nav-list__link">Donde estamos</a></li>
-                <li><a href="#"><i class="fa-solid fa-bars hamburger"></i></a></li>
-            </ul>
-        </nav>   
+        <div class="nav__container">
+            <!-- EL NAV DEBE SER UN COMPONENTE -->
+        </div>  
         <h1 class="title"><span class="material-symbols-outlined">waving_hand</span> Hola!<br>soy <mark>Julian</mark></br></h1>     
     </header>
     <!-- Inicio de seccion bienvenida -->
@@ -77,12 +80,9 @@
             </form>
         </div>
     </section>
-    <!-- Inicio de FOOTER, debe ser un COMPONENTE -->
-    <footer class="footer">
-        <div class="footer-icon-container">
-            <a target="_blank" href="https://github.com/JulianGibelli" title="Github" ><i class="fa-brands fa-square-github fa-2xl"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/julian-gibelli-41189a177/" title="Linkedin" ><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-        </div>
-    </footer>
+
+    <div class="footer-container">
+        <!-- Inicio de FOOTER, debe ser un COMPONENTE -->        
+    </div>    
 </body>
 </html>

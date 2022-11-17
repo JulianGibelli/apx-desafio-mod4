@@ -1,0 +1,65 @@
+/* CSS NAVBAR */
+.nav__container {
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+nav {
+  width: 100%;
+  padding-top: 15px;
+  min-height: 10vh;
+  background-color: #003049;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list a {
+  color: #fcbf49;
+  text-decoration: none;
+}
+
+.icono {
+  margin-right: 5px;
+  color: #fcbf49;
+}
+
+.nav-list__link {
+  display: none;
+}
+
+/* desde 768px aplica.. */
+@media (min-width: 480px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+  .nav-list__link {
+    display: block;
+  }
+  .nav-list li {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+  }
+  /* De los LI seleccioname el primero */
+  li:nth-child(1) {
+    flex-grow: 1; /* si tenes espacio, crece */
+    flex-shrink: 0;
+
+    justify-self: start; /* dentro de tu ancho,anda al principio */
+    text-align: start;
+  }
+}
+/* FIN CSS DE NAVBAR */

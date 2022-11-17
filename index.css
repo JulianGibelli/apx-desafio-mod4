@@ -14,71 +14,6 @@ header {
   background: url("./assets/wave.svg") no-repeat center center #fcbf49;
   background-size: cover;
 }
-/* CSS NAVBAR */
-nav {
-  width: 100%;
-  min-height: 10vh;
-  background-color: #003049;
-  position: sticky;
-  top: 0%;
-  z-index: 1;
-}
-
-.nav-list {
-  margin: 0;
-  padding: 10px;
-  list-style: none;
-  text-align: center;
-}
-
-.nav-list a {
-  color: #fcbf49;
-  text-decoration: none;
-}
-
-.icono {
-  margin-right: 5px;
-  color: #fcbf49;
-}
-
-.nav-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-list__link {
-  display: none;
-}
-
-/* desde 768px aplica.. */
-@media (min-width: 480px) {
-  .hamburger {
-    display: none;
-  }
-  .nav-list {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: flex-end;
-  }
-  .nav-list__link {
-    display: block;
-  }
-  .nav-list li {
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-wrap: wrap;
-  }
-  /* De los LI seleccioname el primero */
-  li:nth-child(1) {
-    flex-grow: 1; /* si tenes espacio, crece */
-    flex-shrink: 0;
-
-    justify-self: start; /* dentro de tu ancho,anda al principio */
-    text-align: start;
-  }
-}
-/* FIN CSS DE NAVBAR */
 
 .title {
   text-align: center;
@@ -119,24 +54,6 @@ nav {
   .bienvenida__text-container {
     align-self: center;
   }
-}
-
-/* FOOTER */
-.footer {
-  width: 100%;
-  height: 10vh;
-  background-color: #003049;
-}
-
-.footer-icon-container {
-  width: 300px;
-  height: 100%;
-  margin: 0 auto;
-  padding-top: 15px;
-  text-align: center;
-}
-.footer-icon-container > a > i {
-  color: #fcbf49;
 }
 
 /* CONOCIMIENTO/SERVICIOS */
