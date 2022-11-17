@@ -1,8 +1,6 @@
 /* CSS NAVBAR */
 .nav__container {
-  position: sticky;
-  top: 0%;
-  z-index: 1;
+  position: static;
 }
 nav {
   width: 100%;
@@ -30,14 +28,45 @@ nav {
   color: #fcbf49;
 }
 
+.hamburger {
+  font-size: 24px;
+  color: #fcbf49;
+}
+
+.hamburger-boton, .cierra-ventana {
+  background-color: transparent;
+  width: fit-content;
+  border: none;
+}
+
+.ventana {
+  display: none;    
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  height: 15vh;
+  padding: 5px;
+  background-color:#d62828;
+  z-index: 1;
+  text-align: right;
+}
+
 .nav-list__link {
   display: none;
 }
 
-/* desde 768px aplica.. */
+/* desde 480px aplica.. */
 @media (min-width: 480px) {
-  .hamburger {
-    display: none;
+  .nav__container {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+  }
+  .hamburger,
+  .hamburger-boton,
+  .ventana {
+    display: none !important;
   }
   .nav-list {
     display: flex;

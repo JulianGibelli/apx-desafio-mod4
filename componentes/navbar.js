@@ -7,9 +7,42 @@ function renderizarHeader(enDonde) {
         <li><a href="#" class="nav-list__link">Portfolio</a></li>
         <li><a href="#" class="nav-list__link">Servicios</a></li>
         <li><a href="#" class="nav-list__link">Contacto</a></li>
-        <li><a href="#"><i class="fa-solid fa-bars hamburger"></i></a></li>
+        <li>
+
+          <button class="hamburger-boton"><i class="fa-solid fa-bars hamburger"></i></button>
+
+          <div class="ventana">
+            <button class="cierra-ventana"><i class="fa-solid fa-xmark fa-lg"></i></button>
+            <div class="ventana-contenido">
+              <ul class="nav-list">
+                <li><a href="#" class="nav-list__link">Portfolio</a></li>
+                <li><a href="#" class="nav-list__link">Servicios</a></li>
+                <li><a href="#" class="nav-list__link">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </li>
     </ul>
 </nav> 
     `;
   enDonde.appendChild(nuevoContainer);
+}
+
+function mostrarVentana(el,ven,links){
+  el.addEventListener("click",()=>{
+    ven.style.display = "inherit"
+    links.forEach(link => {
+      link.style.display = "block"
+    });
+  })
+}
+
+function cierraVentana(el,ven,links){
+  el.addEventListener("click",()=>{
+    ven.style.display = ""
+    links.forEach(link => {
+      link.style.display = ""
+    });
+  })
 }
