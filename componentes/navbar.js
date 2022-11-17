@@ -6,7 +6,7 @@ function renderizarHeader(enDonde) {
         <li><i class="fa-sharp fa-solid fa-code fa-lg icono"></i><a href="./index.html">JulianGibelli</a></li>
         <li><a href="./portfolio.html" class="nav-list__link">Portfolio</a></li>
         <li><a href="#" class="nav-list__link">Servicios</a></li>
-        <li><a href="#" class="nav-list__link">Contacto</a></li>
+        <li><a href="./contacto.html" class="nav-list__link">Contacto</a></li>
         <li>
 
           <button class="hamburger-boton"><i class="fa-solid fa-bars hamburger"></i></button>
@@ -17,7 +17,7 @@ function renderizarHeader(enDonde) {
               <ul class="nav-list">
                 <li><a href="./portfolio.html" class="nav-list__link">Portfolio</a></li>
                 <li><a href="#" class="nav-list__link">Servicios</a></li>
-                <li><a href="#" class="nav-list__link">Contacto</a></li>
+                <li><a href="./contacto.html" class="nav-list__link">Contacto</a></li>
               </ul>
             </div>
           </div>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favIcon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <!-- fontAwesome para iconos -->
+    <script src="https://kit.fontawesome.com/0001ad3a97.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+    <!-- COMPONENTES -->
+    <script defer src="./componentes/navbar.js"></script>
+    <link rel="stylesheet" href="./componentes/navbar.css">
+
+    <script defer src="./componentes/footer.js"></script>
+    <link rel="stylesheet" href="./componentes/footer.css">
+    <title>Julian Gibelli | Contacto</title>
+    <link rel="stylesheet" href="./contacto.css">
+    <script defer src="./contacto.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav__container">
+            <!-- EL NAV DEBE SER UN COMPONENTE -->
+        </div> 
+    </header>
+    <section class="contacto-insert">
+        <!-- esto se recorta y pega dentro de mi contacto.js -->
+        <div class="form-container">
+            <h1 class="form-container__title"><mark>Hablemos!</mark></h1>
+            <form class="form-container__fields">
+                <div class="form-container__fields-inputs">
+                    <label for="nombre">Tu nombre</label>
+                    <input type="input" id="nombre" name="nombre">
+                </div>
+                <div class="form-container__fields-inputs">
+                    <label for="email">Tu email</label>
+                    <input type="input" id="email" name="email">
+                </div>
+                <div class="form-container__fields-inputs">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Escriba su mensaje.."></textarea>                    
+                </div>
+                <div class="form-container__fields-inputs">
+                    <button type="submit" class="boton">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="footer-container">
+        <!-- Inicio de FOOTER, debe ser un COMPONENTE -->        
+    </div> 
+</body>
+</html>

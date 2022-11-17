@@ -56,6 +56,11 @@ nav {
   display: none;
 }
 
+.nav-list__link:hover{
+  color: black;
+  background-color: #FFFF00;
+}
+
 /* desde 480px aplica.. */
 @media (min-width: 480px) {
   .nav__container {
