@@ -3,8 +3,8 @@ function renderizarHeader(enDonde) {
   nuevoContainer.innerHTML = `
     <nav>
     <ul class="nav-list">
-        <li><i class="fa-sharp fa-solid fa-code fa-lg icono"></i><a href="#">JulianGibelli</a></li>
-        <li><a href="#" class="nav-list__link">Portfolio</a></li>
+        <li><i class="fa-sharp fa-solid fa-code fa-lg icono"></i><a href="./index.html">JulianGibelli</a></li>
+        <li><a href="./portfolio.html" class="nav-list__link">Portfolio</a></li>
         <li><a href="#" class="nav-list__link">Servicios</a></li>
         <li><a href="#" class="nav-list__link">Contacto</a></li>
         <li>
@@ -15,7 +15,7 @@ function renderizarHeader(enDonde) {
             <button class="cierra-ventana"><i class="fa-solid fa-xmark fa-lg"></i></button>
             <div class="ventana-contenido">
               <ul class="nav-list">
-                <li><a href="#" class="nav-list__link">Portfolio</a></li>
+                <li><a href="./portfolio.html" class="nav-list__link">Portfolio</a></li>
                 <li><a href="#" class="nav-list__link">Servicios</a></li>
                 <li><a href="#" class="nav-list__link">Contacto</a></li>
               </ul>
