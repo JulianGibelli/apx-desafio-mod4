@@ -1,6 +1,4 @@
-function main() {
-  const url = "https://apx-api.vercel.app/api/utils/dwf";
-  const valores2 = {};
+(function main(){
   const headerEl = document.querySelector(".nav__container");
   renderizarHeader(headerEl);
   const footerEl = document.querySelector(".footer-container");
@@ -12,6 +10,13 @@ function main() {
   const navLinksEls = document.querySelectorAll(".nav-list__link");
   mostrarVentana(abreVentanaEl, ventana, navLinksEls);
   cierraVentana(cierraVentanaEl, ventana, navLinksEls);
+})()
+
+
+function formulario() {
+  const url = "https://apx-api.vercel.app/api/utils/dwf";
+  const valores2 = {};
+  
 
   const miFormEl = document.querySelector(".form-container__fields");
 
@@ -44,4 +49,3 @@ function main() {
   });
 }
 
-main();
